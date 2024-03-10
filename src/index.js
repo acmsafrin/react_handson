@@ -4,11 +4,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import UseRefTest from './UserRefTest';
 import UseStateTest from './UseStateTest';
+import { UseConter } from './useConter';
 import { ContextApp } from './ContextApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <ContextApp/>
+    <UseConter/>
     );
 
 // If you want to start measuring performance in your app, pass a function
