@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import UseRefTest from './UserRefTest';
+import UseStateTest from './UseStateTest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <UseRefTest />
+    <UseStateTest />
     );
 
 // If you want to start measuring performance in your app, pass a function
