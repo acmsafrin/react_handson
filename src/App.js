@@ -1,14 +1,13 @@
 import { useContext, useEffect, useState } from "react";
-import { ThemeProvider, ThemeContext, useTheme } from "./provider/ThemeProvider";
+import { SelectProvider, useSelect } from "./component/Select";
+import Option from "./component/Option";
 function App() {
-  const value=useTheme();
-  console.log(value)
+  const value=useSelect()
   return (
-  
-    <div className="App">
-      <h1 >Hello {value.mode} </h1>    
-      <button onClick={value.toggle}>Toggle</button>
-    </div>
+    <SelectProvider default="V1"> 
+          <Option value="V1" label="L1"></Option>
+          <Option value="V2" label="L2"></Option>
+    </SelectProvider>
   );
 }
 
